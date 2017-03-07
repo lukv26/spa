@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Try to guess</title>
-		<meta charset="UTF-8">
-	</head>
-	<body>
-		<h1>Try to guess</h1>
+<head>
+    <title>Try to guess</title>
+    <meta charset="UTF-8">
+</head>
+<body>
+<h1>Try to guess</h1>
 
-		<script>
-			// read user's number (popup window)
-			
-			// create a random number
-			
-			// compare the numbers
-			
-			// show results (popup window)
-			
-		</script>
-	</body>
+<script>
+    const randomNumber = (Math.random() * 5 + 1).toFixed(0),
+        answer = prompt('Guess the number [1-5]'),
+        winner = 'Good Work',
+        lost = 'Sorry';
+    let info = '';
+    if (answer === randomNumber) {
+        info = winner;
+    } else {
+        info = lost;
+    }
+
+    alert(info);
+</script>
+</body>
 </html>

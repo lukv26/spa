@@ -9,13 +9,15 @@
 		<p>Display data one the console</p>
 
 		<script>
-			// enter your name, surname
-			// ...
-			
-			// display your personal data on the console
-			// ...
-			
-			// 
+            const name = 'Lukasz',
+                surname = 'Walewski',
+                age = 21,
+                toDisplay = `Name: ${name}, Surname: ${surname}, age: ${age}`,
+				confirmResult = confirm(toDisplay);
+            if(confirmResult) {
+                console.log(toDisplay);
+			}
+
 		</script>
 	</body>
 </html>
